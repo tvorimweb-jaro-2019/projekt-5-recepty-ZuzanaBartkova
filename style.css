@@ -40,3 +40,137 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.hlavni-recept h2 {
+    font-size: 28px;
+}
+
+.doporucujeme {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.hlavni-recept {
+    background-image: url(images/burger.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+
+.recept-meta{
+   display: flex;
+   justify-content: space-between;
+}
+
+.recept {
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-size: cover;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.recept2 {
+    background-image: url(images/sushi.jpg);
+}
+
+.recept3 {
+    background-image: url(images/rajcata.jpg);
+}
+
+.recept4 {
+    background-image: url(images/kure.jpg);
+}
+
+.recept5 {
+    background-image: url(images/grilovani.jpg);
+}
+
+@media (min-width: 480px) {
+
+    .hlavni-recept {
+        min-height: 250px;
+        padding: 20px;
+        flex-basis: 100%;
+    }
+
+    .hlavni-recept h2 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .recept {
+        min-height: 150px;
+        padding: 20px;
+    }
+
+    .doporucujeme {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sloupec {
+        display: flex;
+        flex-direction: column;
+        width: calc((100%) / 2);
+    }
+}
+
+@media (min-width: 860px) {
+    .hlavni-recept {
+        min-height: 400px;
+        padding: 20px;
+        flex-basis: calc((100%) / 3);
+    }
+
+    .hlavni-recept h2 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .recept {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .doporucujeme {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .sloupec {
+        width: calc((100%) / 3);
+    }
+
+}
+
+
